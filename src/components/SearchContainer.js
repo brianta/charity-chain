@@ -11,6 +11,10 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Input from '@material-ui/core/Input';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles({
   table: {
@@ -110,32 +114,32 @@ class Search extends Component {
             Number of items:
             {queryResults.length}
           </div>
-            <TableContainer style={{minWidth: 650}} component={Paper}>
-              <Table aria-label="simple table">
-                <TableHead>
-                  <TableRow>
-                    <TableCell align="left"><strong>People</strong></TableCell>
-                    <TableCell align="left"><strong>Source</strong></TableCell>
-                    <TableCell align="left"><strong>Org</strong></TableCell>
-                    <TableCell align="left"><strong>Match Offer</strong></TableCell>
-                    <TableCell align="left"><strong>How to Match</strong></TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {queryResults.map((item) => (
-                    <TableRow key={item.People}>
-                      <TableCell component="th" scope="item">
-                        {item.People}
-                      </TableCell>
-                      <TableCell align="left">{item.Source}</TableCell>
-                      <TableCell align="left">{item.Org}</TableCell>
-                      <TableCell align="left">{item.Match_Offer}</TableCell>
-                      <TableCell align="left">{item.How_to_Match}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
+          <div style={{ margin: "1em auto" }} >
+            {queryResults.map((item) => (
+                    <Card style={{margin:"1em"}} variant="outlined">
+                    <CardContent>
+                    <Typography color="textSecondary" gutterBottom>
+                    Name:
+                    </Typography>
+                    <Typography variant="h5" component="h2">
+                    {item.People}
+                    </Typography>
+                    <Typography variant="h5" component="h2">
+                    Match Offer: {item.Match_Offer}
+                    </Typography>
+                    <Typography color="textSecondary" gutterBottom>
+                    {item.How_to_Match}
+                    </Typography>
+                    <Typography color="textSecondary" gutterBottom>
+                    {item.Source}
+                    </Typography>
+                    <Typography color="textSecondary" gutterBottom>
+                    {item.Org}
+                    </Typography>
+                    </CardContent>
+                    </Card>
+            ))}
+          </div>
           </div>
         </div>
       </div>
