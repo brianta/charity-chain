@@ -1,10 +1,10 @@
 module.exports = {
   // Customize me!
   siteMetadata: {
-    company: "Fox and Geese",
-    domain: "https://foxandgeese.com",
+    company: "Donation Match",
+    domain: "https://donationmatch.com",
     defaultTitle:
-      "Fox and Geese: Digital Agency Providing Serverless + React.js Engineering",
+      "Find people to match your donations",
     preamble:
       "find people to match your donation",
     defaultDescription:
@@ -15,7 +15,7 @@ module.exports = {
     },
     menuLinks: [],
   },
-  pathPrefix: "/tiny-agency",
+  pathPrefix: "",
   plugins: [
     "gatsby-plugin-top-layout",
     "gatsby-transformer-remark",

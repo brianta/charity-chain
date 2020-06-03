@@ -118,7 +118,7 @@ class Search extends Component {
                     <strong>How to match: </strong>{item.How_to_Match}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong>Source: </strong>{item.Source}
+                    <strong><a href="{item.Source}">Source</a></strong>
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                     <strong>Org: </strong>{item.Org}
