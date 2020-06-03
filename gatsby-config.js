@@ -9,9 +9,9 @@ module.exports = {
       "find people to match your donation",
     defaultDescription:
       " ",
-    postamble: "Think we can help your project? We'd love to hear from you:",
+    postamble: "",
     contact: {
-      email: "hi@foxandgeese.com",
+      email: "",
     },
     menuLinks: [],
   },
