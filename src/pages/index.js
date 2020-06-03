@@ -83,7 +83,7 @@ const Home = (props) => {
           {preamble}
         </Typography>
       </div>
-      <div className={props.classes.tabs}>
+      <div style={{margin: "auto", width: "70%"}} className={props.classes.tabs}>
         <Tabs
           items={[
             ["People", , <Search />],

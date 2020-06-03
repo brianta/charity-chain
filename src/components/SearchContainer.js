@@ -16,11 +16,6 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-});
 
 class Search extends Component {
   state = {
@@ -96,25 +91,20 @@ class Search extends Component {
     const { bookList, searchResults, searchQuery } = this.state
     const queryResults = searchQuery === "" ? bookList : searchResults
     return (
-      <div style={{ margin: 3 + 'em' }} >
-        <div style={{ margin: "0 auto" }}>
-          <form onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
-            <div style={{ margin: "0 auto" }}>
+        <div>
+        <div>
+        <div>
+          <div>
+                    <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
+            <div>
               <Input
                 id="Search"
                 value={searchQuery}
                 onChange={this.searchData}
                 placeholder="Filter"
-                style={{ margin: "0 auto", width: "400px" }}
               />
             </div>
           </form>
-          <div>
-          <div style={{ margin: "1em auto" }} >
-            Number of items:
-            {queryResults.length}
-          </div>
-          <div style={{ margin: "1em auto" }} >
             {queryResults.map((item) => (
                     <Card style={{margin:"1em"}} variant="outlined">
                     <CardContent>
