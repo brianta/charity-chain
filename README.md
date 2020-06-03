@@ -1,33 +1,24 @@
-<h1 align="center">
-    Material UI Paperbase Starter for Gatsby 🔥
-</h1>
+# Tiny Agency: Simple Gatsby.js Starter
 
-Create dashboards and administration tools in Gastby using [Material UI's](https://material-ui.com/) [Paperbase Premium Theme](https://github.com/mui-org/material-ui/tree/master/docs/src/pages/premium-themes/paperbase)
+**[Check out the demo.](https://foxandgeese.github.io/tiny-agency/)**
 
-## 🚀 Quick start
+We use this very repo for our own agency. Cool beans.
 
-1.  **Create a Gatsby site.**
+<img width="1472"
+src="https://user-images.githubusercontent.com/2158187/52611509-b3246b00-2e3a-11e9-9612-467e080e569d.png">
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+Want something a bit richer? Check out our [Gatsby Material UI Business
+Starter](https://github.com/bluepeter/gatsby-material-ui-business-starter)
+which also uses Material UI and has more pages.
 
-    ```sh
-    # create a new Gatsby site using the Paperbase starter
-    gatsby new my-admin-tool-starter https://github.com/willcode4food/gatsby-starter-paperbase
-    ```
+## Deployment
 
-1.  **Start developing.**
+```
+yarn
+```
 
-    Navigate into your new site’s directory and start it up.
+To build, watch for file edits and hot-reload, and run locally:
 
-    ```sh
-    cd my-admin-tool-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-admin-tool-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```
+gatsby develop
+```

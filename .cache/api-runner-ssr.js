@@ -1,6 +1,21 @@
 var plugins = [{
+      plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/plugins/gatsby-plugin-top-layout/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/node_modules/gatsby-plugin-material-ui/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"FoxAndGeese","short_name":"FoxAndGeese","start_url":"/","background_color":"#eeeeee","display":"standalone","icon":"images/logo.png"},
+    },{
+      plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/node_modules/gatsby-plugin-favicon/gatsby-ssr'),
+      options: {"plugins":[],"logo":"./images/logo.png"},
+    },{
+      plugin: require('/Users/brian.ta/Documents/GitHub/charity-chain/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-120162676-1"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

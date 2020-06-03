@@ -98,7 +98,7 @@ class Search extends Component {
     return (
       <div style={{ margin: 3 + 'em' }} >
         <div style={{ margin: "0 auto" }}>
-          <form onSubmit={this.handleSubmit} noValidate autoComplete="off">
+          <form onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
             <div style={{ margin: "0 auto" }}>
               <Input
                 id="Search"
@@ -118,23 +118,20 @@ class Search extends Component {
             {queryResults.map((item) => (
                     <Card style={{margin:"1em"}} variant="outlined">
                     <CardContent>
-                    <Typography color="textSecondary" gutterBottom>
-                    Name:
-                    </Typography>
                     <Typography variant="h5" component="h2">
                     {item.People}
                     </Typography>
-                    <Typography variant="h5" component="h2">
+                    <Typography variant="h6" component="h3">
                     Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    {item.How_to_Match}
+                    <strong>How to match: </strong>{item.How_to_Match}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    {item.Source}
+                    <strong>Source: </strong>{item.Source}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    {item.Org}
+                    <strong>Org: </strong>{item.Org}
                     </Typography>
                     </CardContent>
                     </Card>
