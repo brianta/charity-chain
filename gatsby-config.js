@@ -58,12 +58,12 @@ module.exports = {
         ignore: [`**/\.*`],
       },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./images/logo.png",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: "./images/logo.png",
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
