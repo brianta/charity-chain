@@ -94,6 +94,10 @@ class CompanySearch extends Component {
         <div>
         <div>
         <div>
+       <div style={{justifyContent: "center"}}>
+        <Typography style={{textAlign: "center", margin: "1em", size:"8px"}} color="textSecondary"> Donate through these companies if you have a connection there. 
+        </Typography>
+        </div>
           <div>
                     <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
             <div>
@@ -115,7 +119,7 @@ class CompanySearch extends Component {
                     Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong><a href={item.linkedin}>LinkedIn</a></strong>
+                    <strong><a style={{textDecoration:"none"}} href={item.linkedin}>LinkedIn</a></strong>
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                     <strong>{item.Employee}</strong>

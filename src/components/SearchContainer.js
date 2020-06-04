@@ -94,8 +94,10 @@ class Search extends Component {
         <div>
         <div>
         <div>
+        <div style={{justifyContent: "center"}}>
+        </div>
           <div>
-                    <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
+            <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
             <div>
               <Input
                 id="Search"
@@ -121,7 +123,8 @@ class Search extends Component {
                     <strong>Org: </strong>{item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong><a href={item.Source}>Source</a></strong>
+                    <strong>Source: </strong>{ item.Source.includes("twitter") ? <a style={{textDecoration:"none"}} href={item.Source}>Twitter</a> : false}
+                    { item.Source.includes("facebook") ? <a style={{textDecoration:"none"}} href={item.Source}>Facebook</a> : false}
                     </Typography>
                     </CardContent>
                     </Card>

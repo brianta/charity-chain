@@ -30,7 +30,7 @@ class FulfilledSearch extends Component {
    * React lifecycle method to fetch the data
    */
   async componentDidMount() {
-    Axios.get("https://api.npoint.io/9e096ecdd61cdc2321ff")
+    Axios.get("https://api.npoint.io/1944203635c82d1687cc")
       .then(result => {
         const bookData = result.data
         this.setState({ bookList: bookData })
@@ -94,8 +94,10 @@ class FulfilledSearch extends Component {
         <div>
         <div>
         <div>
+         <Typography style={{textAlign: "center", margin: "1em"}} color="textSecondary" variant="h6" component="h3"> 💖💖💖💖
+        </Typography>
           <div>
-                    <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
+            <form style={{margin:"1em"}} onSubmit={this.handleSubmit} noValidate variant="filled" autoComplete="off">
             <div>
               <Input
                 id="Search"
@@ -112,7 +114,7 @@ class FulfilledSearch extends Component {
                     <strong>{item.People}</strong>
                     </Typography>
                     <Typography variant="h6" component="h3">
-                    Match Offer: {item.Match_Offer}
+                    Matched: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                     <strong></strong>{item.How_to_Match}
@@ -121,7 +123,7 @@ class FulfilledSearch extends Component {
                     <strong>Org: </strong>{item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong><a href={item.Source}>Tweet</a> them a thank you!</strong>
+                    <a style={{textDecoration:"none"}} href={item.Source}>Tweet</a> them a thank you!
                     </Typography>
                     </CardContent>
                     </Card>

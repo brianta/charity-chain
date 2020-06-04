@@ -16,7 +16,7 @@ import FulfilledSearch from "../components/FulfilledSearchContainer";
 
 const styles = (theme) => ({
     angles: {
-        color: theme.palette.secondary.light,
+        color: "theme.palette.secondary.light",
         opacity: 0.5,
         fontWeight: "normal",
     },
@@ -44,6 +44,10 @@ const styles = (theme) => ({
         marginTop: "40px",
         marginBottom: "40px",
     },
+    links: {
+  textDecoration: "none",
+  textDecorationColor: "#3F51B5",
+},
 });
 const Home = (props) => {
     const {
@@ -73,15 +77,18 @@ const Home = (props) => {
             <div className={classes.text}>
                 <Typography
                     className={classes.h1}
-                    color="primary"
+                    color="Black"
                     paragraph
-                    variant="h2"
+                    variant="h1"
                 >
                     donation match
                 </Typography>
                 <Typography className={classes.h2} paragraph variant="h2">
                     {preamble}
                 </Typography>
+                <Typography className={classes.text} style={{margin:"1em",textAlign:"center"}} gutterBottom> 
+                <a className={classes.links} href="https://support.eji.org/give/153413/#!/donation/checkout">Equal Justice Initiative</a> | <a className={classes.links} href="https://org2.salsalabs.com/o/6857/p/salsa/donation/common/public/?donate_page_KEY=15780">NAACP</a> | <a className={classes.links} href="https://policingequity.org/donate">Center For Policing Equity</a> | <a className={classes.links} href="https://www.joincampaignzero.org/">Campaign Zero</a> 
+        </Typography>
             </div>
             <div
                 style={{
@@ -95,13 +102,13 @@ const Home = (props) => {
                     items={[
                         ["People", , <Search />],
                         ["Company", , <CompanySearch />],
-                        ["Hall of Fame", , <FulfilledSearch />],
+                        ["Fully Matched", , <FulfilledSearch />],
                     ]}
                 />
             </div>
 
             <div className={classes.text}>
-                <Typography color="primary" paragraph variant="h5"></Typography>
+                <Typography></Typography>
             </div>
         </Page>
     );

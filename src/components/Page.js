@@ -9,7 +9,7 @@ const styles = () => ({
     },
     root: {
         maxWidth: "1168px",
-        marginTop: "94px",
+        marginTop: "36px",
     },
 });
 
@@ -29,7 +29,7 @@ const Component = ({ children, classes }) => {
                     style={{
                         width: "100%",
                         maxWidth: "1168px",
-                        marginTop: "94px",
+                        marginTop: "36px",
                     }}
                 >
                     <div style={{ padding: "16px" }}>
