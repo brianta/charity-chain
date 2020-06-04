@@ -101,7 +101,7 @@ class FulfilledSearch extends Component {
                 id="Search"
                 value={searchQuery}
                 onChange={this.searchData}
-                placeholder="Filter"
+                placeholder="Filter by name or org"
               />
             </div>
           </form>
