@@ -17,7 +17,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
 
-class Search extends Component {
+class FulfilledSearch extends Component {
   state = {
     bookList: [],
     search: [],
@@ -115,13 +115,13 @@ class Search extends Component {
                     Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong>How to match: </strong>{item.How_to_Match}
+                    <strong></strong>{item.How_to_Match}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                     <strong>Org: </strong>{item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong><a href={item.Source}>Source</a></strong>
+                    <strong><a href={item.Source}>Tweet</a> them a thank you!</strong>
                     </Typography>
                     </CardContent>
                     </Card>
@@ -133,4 +133,4 @@ class Search extends Component {
     )
   }
 }
-export default Search
+export default FulfilledSearch

@@ -17,7 +17,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
 
-class Search extends Component {
+class CompanySearch extends Component {
   state = {
     bookList: [],
     search: [],
@@ -30,7 +30,7 @@ class Search extends Component {
    * React lifecycle method to fetch the data
    */
   async componentDidMount() {
-    Axios.get("https://api.npoint.io/9e096ecdd61cdc2321ff")
+    Axios.get("https://api.npoint.io/2202abf03afa72f58800")
       .then(result => {
         const bookData = result.data
         this.setState({ bookList: bookData })
@@ -49,7 +49,7 @@ class Search extends Component {
    */
   rebuildIndex = () => {
     const { bookList } = this.state
-    const dataToSearch = new JsSearch.Search("People")
+    const dataToSearch = new JsSearch.Search("Company")
     /**
      *  defines a indexing strategy for the data
      * more about it in here https://github.com/bvaughn/js-search#configuring-the-index-strategy
@@ -65,9 +65,9 @@ class Search extends Component {
      * defines the search index
      * read more in here https://github.com/bvaughn/js-search#configuring-the-search-index
      */
-    dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex("People")
+    dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex("Company")
 
-    dataToSearch.addIndex("People") // sets the index attribute for the data
+    dataToSearch.addIndex("Company") // sets the index attribute for the data
     dataToSearch.addIndex("Org") // sets the index attribute for the data
 
     dataToSearch.addDocuments(bookList) // adds the data to be searched
@@ -109,19 +109,19 @@ class Search extends Component {
                     <Card style={{margin:"1em"}} variant="outlined">
                     <CardContent>
                     <Typography variant="h5" component="h2">
-                    <strong>{item.People}</strong>
+                    <strong>{item.Company}</strong>
                     </Typography>
-                    <Typography variant="h6" component="h3">
+                    <Typography variant="h6">
                     Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                    <strong>How to match: </strong>{item.How_to_Match}
+                    <strong><a href={item.linkedin}>LinkedIn</a></strong>
+                    </Typography>
+                    <Typography color="textSecondary" gutterBottom>
+                    <strong>{item.Employee}</strong>
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                     <strong>Org: </strong>{item.Org}
-                    </Typography>
-                    <Typography color="textSecondary" gutterBottom>
-                    <strong><a href={item.Source}>Source</a></strong>
                     </Typography>
                     </CardContent>
                     </Card>
@@ -133,4 +133,4 @@ class Search extends Component {
     )
   }
 }
-export default Search
+export default CompanySearch

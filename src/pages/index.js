@@ -11,6 +11,8 @@ import { Robot } from "mdi-material-ui";
 import logo from "../../images/logo.png";
 import Avatar from "@material-ui/core/Avatar";
 import Search from "../components/SearchContainer"
+import CompanySearch from "../components/CompanySearchContainer"
+import FulfilledSearch from "../components/FulfilledSearchContainer"
 
 
 const styles = (theme) => ({
@@ -74,10 +76,9 @@ const Home = (props) => {
           className={classes.h1}
           color="primary"
           paragraph
-          variant="h1"
+          variant="h2"
         >
-          <span className={classes.angles}>&lt;</span> donation match{" "}
-          <span className={classes.angles}>&gt;</span>
+          donation match
         </Typography>
         <Typography className={classes.h2} paragraph variant="h2">
           {preamble}
@@ -87,7 +88,8 @@ const Home = (props) => {
         <Tabs
           items={[
             ["People", , <Search />],
-            ["Companies", , ],
+            ["Company", ,<CompanySearch /> ],
+            ["Hall of Fame", , <FulfilledSearch />]
           ]}
         />
       </div>
