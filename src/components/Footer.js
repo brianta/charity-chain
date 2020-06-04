@@ -21,22 +21,12 @@ const Footer = (props) => {
         <div style={{ textAlign: "center" }}>
           <Typography component="span" variant="caption">
             ©{new Date().getFullYear()} {company}{" "}
-            <Hidden only={["xs", "sm"]}>–</Hidden>
             <Hidden only={["xl", "lg", "md"]}>
               <br />
             </Hidden>{" "}
             {email}
           </Typography>
           <br />
-          <a
-            href="https://github.com/foxandgeese/tiny-agency"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <IconButton>
-              <Github />
-            </IconButton>
-          </a>
         </div>
       </footer>
     </>
