@@ -86,8 +86,8 @@ const Home = (props) => {
                 <Typography className={classes.h2} paragraph variant="h2">
                     {preamble}
                 </Typography>
-                <Typography className={classes.text} style={{margin:"1em",textAlign:"center"}} gutterBottom> 
-                <a className={classes.links} href="https://support.eji.org/give/153413/#!/donation/checkout">Equal Justice Initiative</a> | <a className={classes.links} href="https://org2.salsalabs.com/o/6857/p/salsa/donation/common/public/?donate_page_KEY=15780">NAACP</a> | <a className={classes.links} href="https://policingequity.org/donate">Center For Policing Equity</a> | <a className={classes.links} href="https://www.joincampaignzero.org/">Campaign Zero</a> 
+                <Typography className={classes.text} style={{margin:"1em",textAlign:"center"}} gutterBottom>
+                Donate today: <a className={classes.links} href="https://support.eji.org/give/153413/#!/donation/checkout">Equal Justice Initiative</a> | <a className={classes.links} href="https://org2.salsalabs.com/o/6857/p/salsa/donation/common/public/?donate_page_KEY=15780">NAACP</a> | <a className={classes.links} href="https://policingequity.org/donate">Center For Policing Equity</a> | <a className={classes.links} href="https://www.joincampaignzero.org/">Campaign Zero</a> 
         </Typography>
             </div>
             <div
