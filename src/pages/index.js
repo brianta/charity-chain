@@ -84,7 +84,11 @@ const Home = (props) => {
                 </Typography>
             </div>
             <div
-                style={{ margin: "auto", maxWidth: 1168 }}
+                style={{
+                    margin: "auto",
+                    width: "100%",
+                    maxWidth: 790,
+                }}
                 className={props.classes.tabs}
             >
                 <Tabs

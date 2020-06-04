@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "./Footer";
-import Grid from "@material-ui/core/Grid";
 import { Style } from "react-style-tag";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -20,20 +19,17 @@ const Component = ({ children, classes }) => {
             <Style>{`
       body {background: #eee}
     `}</Style>
-            {/* <Grid alignItems="stretch" container justify="center" spacing={0}>
-        <Grid className={classes.root} item xs={12}> */}
             <div
                 style={{
                     display: "flex",
                     justifyContent: "center",
-                    border: "1px solid blue",
                 }}
             >
                 <div
                     style={{
-                        maxWidth: "100%",
+                        width: "100%",
+                        maxWidth: "1168px",
                         marginTop: "94px",
-                        border: "1px solid red",
                     }}
                 >
                     <div style={{ padding: "16px" }}>
@@ -42,8 +38,6 @@ const Component = ({ children, classes }) => {
                     </div>
                 </div>
             </div>
-            {/* </Grid> */}
-            {/* </Grid> */}
         </div>
     );
 };
