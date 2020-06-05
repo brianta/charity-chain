@@ -116,7 +116,7 @@ class CompanySearch extends Component {
           <div>
             <div style={{ justifyContent: "center" }}>
               <Typography
-                style={{ textAlign: "center", margin: "1em", size: "8px" }}
+                style={{ textAlign: "center", marginTop: "2em", size: "8px" }}
                 color="textSecondary"
               >
                 {" "}

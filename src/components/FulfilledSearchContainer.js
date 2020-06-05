@@ -115,15 +115,6 @@ class FulfilledSearch extends Component {
       <div>
         <div>
           <div>
-            <Typography
-              style={{ textAlign: "center", margin: "1em" }}
-              color="textSecondary"
-              variant="h6"
-              component="h3"
-            >
-              {" "}
-              💖💖💖💖
-            </Typography>
             <div>
               <div></div>
               <form

@@ -109,6 +109,22 @@ const Home = (props) => {
             Campaign Zero
           </a>
         </Typography>
+        <Typography
+          className={classes.text}
+          style={{ margin: "1em", textAlign: "center" }}
+          gutterBottom
+        >
+        Add to our donation match list <a style={{textDecoration:"none"}} href="https://docs.google.com/forms/d/e/1FAIpQLScKjLsuuS2xAOb5aKFyMHdJYyr28581ufajTMfV1nBUfnDMsw/viewform?usp=sf_link"> here</a>. 
+        <br/>
+        Is something out of date or incorrect? Tell us <a style={{textDecoration:"none"}} href="https://forms.gle/XywPeyBbscJPBvHc7">here</a>.
+        </Typography>
+        <Typography
+          className={classes.text}
+          style={{ margin: "1em", textAlign: "center" }}
+          gutterBottom
+        >
+        Tweet me leads. Ask me questions. <a style={{textDecoration:"none"}} href="https://twitter.com/fanfavorite_bta">@fanfavorite_bta</a>
+        </Typography>
       </div>
       <div
         style={{
