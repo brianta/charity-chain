@@ -169,7 +169,7 @@ class FulfilledSearch extends Component {
                       {item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                      <a style={{textDecoration: "none",color:"#3F51B5"}} href={item.Source}>
+                      <a target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",color:"#3F51B5"}} href={item.Source}>
                         Tweet
                       </a>{" "}
                       them a thank you!

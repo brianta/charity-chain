@@ -169,6 +169,7 @@ class Search extends Component {
                       <strong>Source: </strong>
                       {item.Source.includes("twitter") ? (
                         <a
+                          target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
@@ -179,6 +180,7 @@ class Search extends Component {
                       )}
                       {item.Source.includes("facebook") ? (
                         <a
+                          target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >

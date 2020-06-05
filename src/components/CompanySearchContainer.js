@@ -166,14 +166,13 @@ class CompanySearch extends Component {
                       Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                      <strong>
                         <a
+                          target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.linkedin}
                         >
                           LinkedIn
                         </a>
-                      </strong>
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                       <strong>{item.Employee}</strong>
