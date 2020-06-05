@@ -6,7 +6,7 @@ module.exports = {
     defaultTitle:
       "Find people to match your donations",
     preamble:
-      "find people to match your donation",
+      "Find people to match your donation",
     defaultDescription:
       " ",
     postamble: "",

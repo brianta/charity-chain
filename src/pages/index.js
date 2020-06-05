@@ -76,7 +76,7 @@ const Home = (props) => {
       </SEO>
       <div className={classes.text}>
         <Typography className={classes.h1} color="Black" paragraph variant="h1">
-          donation matching
+          Donation Matching
         </Typography>
         <Typography className={classes.h2} paragraph variant="h2">
           {preamble}
@@ -107,7 +107,7 @@ const Home = (props) => {
             Center For Policing Equity
           </a>{" "}
           |{" "}
-          <a target="_blank" rel="noopener noreferrer" className={classes.links} href="https://www.joincampaignzero.org/">
+          <a target="_blank" rel="noopener noreferrer"className={classes.links} href="https://www.joincampaignzero.org/">
             Campaign Zero
           </a>
         </Typography>
