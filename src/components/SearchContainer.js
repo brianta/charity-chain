@@ -141,7 +141,6 @@ class Search extends Component {
                       label="Type to filter by organization or name"
                       margin="normal"
                       variant="outlined"
-                      InputProps={{ ...params.InputProps, type: "search" }}
                       value={searchQuery}
                       onChange={this.searchData}
                     />
