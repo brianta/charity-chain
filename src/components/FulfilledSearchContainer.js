@@ -157,7 +157,7 @@ class FulfilledSearch extends Component {
                       <strong>Org: </strong>
                       {item.Org}
                     </Typography>
-                    <Typography color="textSecondary" gutterBottom>
+                    <Typography color="textSecondary" style={{topMargin:"1em"}} gutterBottom>
                       {item.Source.includes("twitter") ? (
                         <a
                           target="_blank" rel="noopener noreferrer"
