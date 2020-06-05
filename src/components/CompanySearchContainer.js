@@ -106,13 +106,6 @@ class CompanySearch extends Component {
         <div>
           <div>
             <div style={{ justifyContent: "center" }}>
-              <Typography
-                style={{ textAlign: "center", marginTop: "2em", size: "8px" }}
-                color="textSecondary"
-              >
-                {" "}
-                Donate through these companies if you have a connection there.
-              </Typography>
             </div>
             <div>
               <form
@@ -131,9 +124,10 @@ class CompanySearch extends Component {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="Type to filter by organization or name"
+                      label="What company do you want to see if they're matching donations?"
                       margin="normal"
                       variant="outlined"
+                      style={{backgroundColor:"white"}}
                       InputProps={{ ...params.InputProps, type: "search" }}
                       value={searchQuery}
                       onChange={this.searchData}

@@ -129,6 +129,7 @@ class FulfilledSearch extends Component {
                       label="Type to filter by organization or name"
                       margin="normal"
                       variant="outlined"
+                      style={{backgroundColor:"white"}}
                       InputProps={{ ...params.InputProps, type: "search" }}
                       value={searchQuery}
                       onChange={this.searchData}

@@ -122,9 +122,10 @@ class Search extends Component {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="Type to filter by organization or name"
+                      label="What organization do you want to donate to?"
                       margin="normal"
                       variant="outlined"
+                      style={{backgroundColor:"white"}}
                       value={searchQuery}
                       onChange={this.searchData}
                     />
