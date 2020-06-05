@@ -172,6 +172,17 @@ class Search extends Component {
                       ) : (
                         false
                       )}
+                      {item.Source.includes("instagram") ? (
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          style={{textDecoration: "none",color:"#3F51B5"}}
+                          href={item.Source}
+                        >
+                          Instagram
+                        </a>
+                      ) : (
+                        false
+                      )}
                     </Typography>
                   </CardContent>
                 </Card>
