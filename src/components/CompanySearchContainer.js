@@ -17,7 +17,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import Button from '@material-ui/core/Button';
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const styles = (theme) => ({
   links: {
@@ -141,19 +141,17 @@ class CompanySearch extends Component {
                 <Card style={{ margin: "1em" }} variant="outlined">
                   <CardContent>
                     <Typography variant="h5" component="h2">
-                      <strong>{item.Company}</strong>
-                    </Typography>
-                    <Typography variant="h6">
-                      Match Offer: {item.Match_Offer}
-                    </Typography>
-                    <Typography color="textSecondary" gutterBottom>
-                        <a
+                      <strong>{item.Company} </strong>
+                      <a
                           target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.linkedin}
                         >
-                          LinkedIn
+                          <LinkedInIcon fontSize="small"/>
                         </a>
+                    </Typography>
+                    <Typography variant="h6">
+                      Match Offer: {item.Match_Offer}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                       <strong>{item.Employee}</strong>
