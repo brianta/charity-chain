@@ -76,7 +76,7 @@ const Home = (props) => {
       </SEO>
       <div className={classes.text}>
         <Typography className={classes.h1} color="Black" paragraph variant="h1">
-          donation match
+          donation matching
         </Typography>
         <Typography className={classes.h2} paragraph variant="h2">
           {preamble}

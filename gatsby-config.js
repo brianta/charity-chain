@@ -1,7 +1,7 @@
 module.exports = {
   // Customize me!
   siteMetadata: {
-    company: "Donation Match",
+    company: "Donation Matching",
     domain: "",
     defaultTitle:
       "Find people to match your donations",
