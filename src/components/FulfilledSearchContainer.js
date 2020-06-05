@@ -19,6 +19,9 @@ import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { withStyles } from "@material-ui/core/styles";
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const styles = (theme) => ({
   links: {
@@ -126,7 +129,7 @@ class FulfilledSearch extends Component {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="Type to filter by organization or name"
+                      label="Search: 'Jennifer'"
                       margin="normal"
                       variant="outlined"
                       style={{backgroundColor:"white"}}
@@ -155,10 +158,39 @@ class FulfilledSearch extends Component {
                       {item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                      <a target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",color:"#3F51B5"}} href={item.Source}>
-                        Tweet
-                      </a>{" "}
-                      them a thank you!
+                      {item.Source.includes("twitter") ? (
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          style={{textDecoration: "none",color:"#3F51B5"}}
+                          href={item.Source}
+                        >
+                          <Button variant="contained" color="primary" onClick={() => { }}>Send a thank you! &nbsp;<TwitterIcon/> </Button>
+                        </a>
+                      ) : (
+                        false
+                      )}
+                      {item.Source.includes("facebook") ? (
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          style={{textDecoration: "none",color:"#3F51B5"}}
+                          href={item.Source}
+                        >
+                          <Button variant="contained" color="primary" onClick={() => { }}>Send a thank you! &nbsp;<FacebookIcon/></Button>
+                        </a>
+                      ) : (
+                        false
+                      )}
+                      {item.Source.includes("instagram") ? (
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          style={{textDecoration: "none",color:"#3F51B5"}}
+                          href={item.Source}
+                        >
+                          <Button variant="contained" color="primary" onClick={() => { }}>Send a thank you! &nbsp;<InstagramIcon/></Button>
+                        </a>
+                      ) : (
+                        false
+                      )}
                     </Typography>
                   </CardContent>
                 </Card>

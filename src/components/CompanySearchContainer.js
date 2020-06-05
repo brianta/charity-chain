@@ -16,6 +16,8 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import Button from '@material-ui/core/Button';
+
 
 const styles = (theme) => ({
   links: {
@@ -124,7 +126,7 @@ class CompanySearch extends Component {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="What company do you want to see if they're matching donations?"
+                      label="Search: 'Netlify'"
                       margin="normal"
                       variant="outlined"
                       style={{backgroundColor:"white"}}
@@ -160,13 +162,13 @@ class CompanySearch extends Component {
                       <strong>Org: </strong>
                       {item.Org}
                     </Typography>
-                        {item.Source.includes("https") ? (<Typography color="textSecondary" gutterBottom>
+                        {item.Source.includes("https") ? (<Typography style={{marginTop:"1em"}} color="textSecondary" gutterBottom>
                         <a
                           target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
-                          Learn More
+                          <Button variant="contained" color="primary" onClick={() => { }}>Learn More</Button>
                         </a>
                     </Typography>) : false }
                   </CardContent>

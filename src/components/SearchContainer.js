@@ -16,6 +16,10 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import Button from '@material-ui/core/Button';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const styles = (theme) => ({
   links: {
@@ -122,7 +126,7 @@ class Search extends Component {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="What organization do you want to donate to?"
+                      label="Search: 'NAACP'"
                       margin="normal"
                       variant="outlined"
                       style={{backgroundColor:"white"}}
@@ -149,15 +153,14 @@ class Search extends Component {
                       <strong>Org: </strong>
                       {item.Org}
                     </Typography>
-                    <Typography color="textSecondary" gutterBottom>
-                      <strong>Source: </strong>
+                    <Typography color="textSecondary" style={{marginTop:"1em"}} gutterBottom>
                       {item.Source.includes("twitter") ? (
                         <a
                           target="_blank" rel="noopener noreferrer"
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
-                          Twitter
+                          <Button variant="contained" color="primary" onClick={() => { }}>Source on &nbsp;<TwitterIcon/> </Button>
                         </a>
                       ) : (
                         false
@@ -168,7 +171,7 @@ class Search extends Component {
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
-                          Facebook
+                          <Button variant="contained" color="primary" onClick={() => { }}>Source on &nbsp;<FacebookIcon/></Button>
                         </a>
                       ) : (
                         false
@@ -179,7 +182,7 @@ class Search extends Component {
                           style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
-                          Instagram
+                          <Button variant="contained" color="primary" onClick={() => { }}>Source on &nbsp;<InstagramIcon/></Button>
                         </a>
                       ) : (
                         false
