@@ -25,22 +25,6 @@ const styles = (theme) => ({
 });
 
 const currencies = [
-  {
-    value: "NAACP",
-    label: "NAACP",
-  },
-  {
-    value: "Campaign Zero",
-    label: "Campaign Zero",
-  },
-  {
-    value: "EJI",
-    label: "EJI",
-  },
-  {
-    value: "Center for Policing Equity",
-    label: "Center for Policing Equity",
-  },
 ];
 
 class Search extends Component {
