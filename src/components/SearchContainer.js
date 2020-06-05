@@ -159,7 +159,7 @@ class Search extends Component {
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                       <strong>How to match: </strong>
-                      {item.How_to_Match}
+                      {item.How_to_Match.includes("gofund") ? <a target="_blank" rel="noopener noreferrer" style={{textDecoration: "none",color:"#3F51B5"}} href={item.How_to_Match}>GoFundMe</a> : (item.How_to_Match) }
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
                       <strong>Org: </strong>
