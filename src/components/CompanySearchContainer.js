@@ -181,6 +181,15 @@ class CompanySearch extends Component {
                       <strong>Org: </strong>
                       {item.Org}
                     </Typography>
+                        {item.Source.includes("https") ? (<Typography color="textSecondary" gutterBottom>
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          style={{textDecoration: "none",color:"#3F51B5"}}
+                          href={item.Source}
+                        >
+                          Learn More
+                        </a>
+                    </Typography>) : false }
                   </CardContent>
                 </Card>
               ))}
