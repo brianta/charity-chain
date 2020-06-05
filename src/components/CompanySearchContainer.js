@@ -17,6 +17,12 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
+const styles = (theme) => ({
+  links: {
+    textDecoration: "none",
+    color: "#3F51B5",
+  },
+});
 
 const currencies = [
   {
@@ -162,7 +168,7 @@ class CompanySearch extends Component {
                     <Typography color="textSecondary" gutterBottom>
                       <strong>
                         <a
-                          style={{ textDecoration: "none" }}
+                          style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.linkedin}
                         >
                           LinkedIn

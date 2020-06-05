@@ -17,6 +17,13 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
+const styles = (theme) => ({
+  links: {
+    textDecoration: "none",
+    color: "#3F51B5",
+  },
+});
+
 const currencies = [
   {
     value: "NAACP",
@@ -162,7 +169,7 @@ class Search extends Component {
                       <strong>Source: </strong>
                       {item.Source.includes("twitter") ? (
                         <a
-                          style={{ textDecoration: "none" }}
+                          style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
                           Twitter
@@ -172,7 +179,7 @@ class Search extends Component {
                       )}
                       {item.Source.includes("facebook") ? (
                         <a
-                          style={{ textDecoration: "none" }}
+                          style={{textDecoration: "none",color:"#3F51B5"}}
                           href={item.Source}
                         >
                           Facebook

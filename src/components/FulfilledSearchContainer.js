@@ -18,6 +18,14 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import { withStyles } from "@material-ui/core/styles";
+
+const styles = (theme) => ({
+  links: {
+    textDecoration: "none",
+    color: "#3F51B5",
+  },
+});
 
 const currencies = [
   {
@@ -161,7 +169,7 @@ class FulfilledSearch extends Component {
                       {item.Org}
                     </Typography>
                     <Typography color="textSecondary" gutterBottom>
-                      <a style={{ textDecoration: "none" }} href={item.Source}>
+                      <a style={{textDecoration: "none",color:"#3F51B5"}} href={item.Source}>
                         Tweet
                       </a>{" "}
                       them a thank you!
@@ -176,4 +184,4 @@ class FulfilledSearch extends Component {
     );
   }
 }
-export default FulfilledSearch;
+export default withStyles(styles)(FulfilledSearch);

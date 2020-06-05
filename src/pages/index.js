@@ -35,7 +35,7 @@ const styles = (theme) => ({
     textAlign: "center",
   },
   h1: {
-    fontSize: "5em",
+    fontSize: "4em",
   },
   h2: {
     fontSize: "1.6em",
@@ -46,7 +46,7 @@ const styles = (theme) => ({
   },
   links: {
     textDecoration: "none",
-    textDecorationColor: "#3F51B5",
+    color: "#3F51B5",
   },
 });
 const Home = (props) => {
@@ -114,16 +114,16 @@ const Home = (props) => {
           style={{ margin: "1em", textAlign: "center" }}
           gutterBottom
         >
-        Add to our donation match list <a style={{textDecoration:"none"}} href="https://docs.google.com/forms/d/e/1FAIpQLScKjLsuuS2xAOb5aKFyMHdJYyr28581ufajTMfV1nBUfnDMsw/viewform?usp=sf_link"> here</a>. 
+        <a className={classes.links} style={{textDecoration:"none"}} href="https://docs.google.com/forms/d/e/1FAIpQLScKjLsuuS2xAOb5aKFyMHdJYyr28581ufajTMfV1nBUfnDMsw/viewform?usp=sf_link">Add to this list</a>. 
         <br/>
-        Is something out of date or incorrect? Tell us <a style={{textDecoration:"none"}} href="https://forms.gle/XywPeyBbscJPBvHc7">here</a>.
+         <a className={classes.links} style={{textDecoration:"none"}} href="https://forms.gle/XywPeyBbscJPBvHc7">Correct something on this list</a>.
         </Typography>
         <Typography
           className={classes.text}
           style={{ margin: "1em", textAlign: "center" }}
           gutterBottom
         >
-        Tweet me leads. Ask me questions. <a style={{textDecoration:"none"}} href="https://twitter.com/fanfavorite_bta">@fanfavorite_bta</a>
+        Tweet me <a className={classes.links} style={{textDecoration:"none"}} href="https://twitter.com/fanfavorite_bta">@fanfavorite_bta</a>
         </Typography>
       </div>
       <div
